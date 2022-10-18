@@ -1,7 +1,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input");
 const loginBtn = loginForm.querySelector("button");
-const greeting = document.querySelector("#greeting");
+//const greeting = document.querySelector("#greeting");
 
 const HIIDDEN_CALSSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -12,8 +12,9 @@ function paintUsername(username) {
   clock.classList.remove(HIIDDEN_CALSSNAME);
   todoForm.classList.remove(HIIDDEN_CALSSNAME);
   weatherContainer.classList.remove(HIIDDEN_CALSSNAME);
-  loginForm.classList.add(HIIDDEN_CALSSNAME);
   quotesContainer.classList.remove(HIIDDEN_CALSSNAME);
+  todoList.classList.remove(HIIDDEN_CALSSNAME);
+  loginForm.classList.add(HIIDDEN_CALSSNAME);
 }
 
 function handleLoginSubmit(event) {
