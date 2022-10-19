@@ -1,6 +1,6 @@
 const weatherContainer = document.querySelector("#weather-container");
-const city = weatherContainer.querySelector("span:first-child");
-const weather = weatherContainer.querySelector("span:last-child");
+const city = weatherContainer.querySelector("p:first-child");
+const weather = weatherContainer.querySelector("p:last-child");
 
 const API_KEY = "34db59a4e51752a7ef6686db3f8f9ccd";
 

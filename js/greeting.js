@@ -7,7 +7,15 @@ const HIIDDEN_CALSSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function paintUsername(username) {
-  greeting.innerText = `Hello! ${username}`;
+  const date = new Date();
+  const h = date.getHours();
+
+  greeting.innerText =
+    h < 12
+      ? `Good morning! ${username}`
+      : h < 17
+      ? `Good afternoon! ${username}`
+      : `Good evening! ${username}`;
   greeting.classList.remove(HIIDDEN_CALSSNAME);
   clock.classList.remove(HIIDDEN_CALSSNAME);
   todoForm.classList.remove(HIIDDEN_CALSSNAME);

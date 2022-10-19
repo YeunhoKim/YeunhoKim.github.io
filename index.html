@@ -8,6 +8,12 @@
     <title>Chrome Todo App</title>
   </head>
   <body>
+    <header>
+      <nav class="hidden" id="weather-container">
+        <p></p>
+        <p></p>
+      </nav>
+    </header>
     <form id="login-form">
       <input
         type="text"
@@ -16,21 +22,19 @@
         maxlength="15"
       />
     </form>
-    <h1 id="clock" class="hidden">00:00:00</h1>
-    <h1 id="greeting" class="hidden"></h1>
-    <div class="hidden" id="weather-container">
-      <span></span>
-      <span></span>
+    <div id="after-login">
+      <ul class="hidden" id="todo-list"></ul>
+      <h1 id="clock" class="hidden">00:00:00</h1>
+      <h1 id="greeting" class="hidden"></h1>
+      <form class="hidden" id="todo-form">
+        <h2>What do you want to do today?</h2>
+        <input type="text" required />
+      </form>
+      <div class="hidden" id="quotes-container">
+        <p></p>
+        <p></p>
+      </div>
     </div>
-    <div class="hidden" id="quotes-container">
-      <span></span>
-      <span></span>
-    </div>
-    <form class="hidden" id="todo-form">
-      <h2>What do you want to do today?</h2>
-      <input type="text" placeholder="Write to do" required />
-    </form>
-    <ul class="hidden" id="todo-list"></ul>
     <script src="js/utilities.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/todo.js"></script>

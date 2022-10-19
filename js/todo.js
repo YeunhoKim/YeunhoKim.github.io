@@ -24,8 +24,8 @@ function paintTodo(newTodoObj) {
   span.innerText = newTodoObj.text;
   btn.innerText = "❌";
 
-  li.appendChild(span);
   li.appendChild(btn);
+  li.appendChild(span);
 
   todoList.appendChild(li);
 

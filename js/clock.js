@@ -14,7 +14,7 @@ function paintClock(h, m, s) {
 function handleClock() {
   const date = new Date();
   const h = date.getHours();
-  const m = date.getHours();
+  const m = date.getMinutes();
   const s = date.getSeconds();
   paintClock(h, m, s);
 }
