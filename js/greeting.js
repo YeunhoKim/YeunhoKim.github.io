@@ -19,7 +19,7 @@ function paintUsername(username) {
   greeting.classList.remove(HIIDDEN_CALSSNAME);
   clock.classList.remove(HIIDDEN_CALSSNAME);
   todoForm.classList.remove(HIIDDEN_CALSSNAME);
-  weatherContainer.classList.remove(HIIDDEN_CALSSNAME);
+  weatherHeader.classList.remove(HIIDDEN_CALSSNAME);
   quotesContainer.classList.remove(HIIDDEN_CALSSNAME);
   todoList.classList.remove(HIIDDEN_CALSSNAME);
   loginForm.classList.add(HIIDDEN_CALSSNAME);
