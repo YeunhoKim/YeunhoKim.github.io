@@ -5,7 +5,7 @@ const weather = weatherContainer.querySelector("p:last-child");
 const API_KEY = "34db59a4e51752a7ef6686db3f8f9ccd";
 
 function geoOk(location) {
-  console.log(location);
+  //console.log(location);
   const lat = location.coords.latitude;
   const lon = location.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=kr`;

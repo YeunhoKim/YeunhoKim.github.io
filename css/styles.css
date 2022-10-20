@@ -46,7 +46,7 @@ img {
   z-index: -100;
 }
 
-input {
+.normal-input {
   width: 30rem;
   font-size: 2rem;
   background-color: transparent;
@@ -70,6 +70,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #clock {
@@ -105,17 +106,36 @@ input:focus {
 #todo-list {
   position: absolute;
   top: 200px;
-  left: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 0.4rem;
+  height: 6.6rem;
+  overflow-y: scroll;
+  /* //scrollbar-color: white; */
+  scrollbar-color: rebeccapurple green;
 }
 
-#todo-list button {
-  margin-right: 15px;
+#todo-list input {
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin: 0 0.5rem;
 }
 
 #todo-list li {
   font-size: 1.7rem;
-  margin: 0.5rem 0.5rem;
+  margin: 0 0 0.4rem 0.5rem;
+  display: flex;
+  align-items: center;
 }

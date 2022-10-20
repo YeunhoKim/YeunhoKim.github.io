@@ -10,26 +10,32 @@ function saveTodos(todos) {
 
 function deleteTodo(event) {
   event.preventDefault();
+  //console.log(event);
   const li = event.target.parentElement;
+  //console.log(event);
   li.remove();
   todos = todos.filter((todo) => todo.id !== parseInt(li.id));
   saveTodos(todos);
 }
 
 function paintTodo(newTodoObj) {
+  const label = document.createElement("label");
   const li = document.createElement("li");
   const span = document.createElement("span");
-  const btn = document.createElement("button");
+  const btn = document.createElement("input");
+  label.htmlFor = newTodoObj.id;
+  btn.id = newTodoObj.id;
+  //console.log(label);
   li.id = newTodoObj.id;
+  btn.type = "checkbox";
   span.innerText = newTodoObj.text;
-  btn.innerText = "❌";
 
   li.appendChild(btn);
+  li.appendChild(label);
   li.appendChild(span);
-
   todoList.appendChild(li);
-
-  btn.addEventListener("click", deleteTodo);
+  //console.dir(btn);
+  label.addEventListener("click", deleteTodo);
 }
 
 function handleTodoSubmit(event) {
