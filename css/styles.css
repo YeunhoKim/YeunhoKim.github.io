@@ -2,12 +2,13 @@
 
 * {
   box-sizing: border-box;
+  text-shadow: 1px 1px 3px black;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
@@ -26,13 +27,23 @@ header {
   top: 3rem;
   right: 0rem;
   width: 100rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
 }
 
 #weather-container {
   display: flex;
+  flex-direction: column;
   width: 95%;
-  justify-content: flex-end;
-  gap: 15px;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+#temp {
+  margin-right: 2rem;
+  font-size: 2.3rem;
 }
 
 .hidden {
@@ -79,6 +90,17 @@ input:focus {
   justify-content: center;
 }
 
+#clock-container {
+  display: flex;
+  align-items: center;
+}
+
+#clock-type {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
 #clock {
   font-size: 7rem;
   margin-bottom: 2.5rem;
@@ -110,14 +132,12 @@ input:focus {
 }
 
 #todo-list {
-  position: absolute;
-  top: 200px;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   height: 6.6rem;
   overflow-y: scroll;
-  /* //scrollbar-color: white; */
   scrollbar-color: rebeccapurple green;
 }
 
@@ -143,5 +163,11 @@ label {
   font-size: 1.7rem;
   margin: 0 0 0.4rem 0.5rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  text-shadow: 3px 3px 7px black;
+}
+
+#todo-list li > span:last-child {
+  font-size: 0.8rem;
+  margin: 0 2.4rem;
 }

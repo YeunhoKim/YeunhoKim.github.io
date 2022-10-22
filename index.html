@@ -10,9 +10,12 @@
   <body>
     <header id="weather-header" class="hidden">
       <nav id="weather-container">
-        <p></p>
-        <p></p>
+        <div>
+          <p></p>
+          <p></p>
+        </div>
       </nav>
+      <p id="temp"></p>
     </header>
     <form id="login-form">
       <input
@@ -24,14 +27,19 @@
       />
     </form>
     <div id="after-login">
-      <ul class="hidden" id="todo-list"></ul>
-
-      <h1 id="clock" class="hidden">00:00:00</h1>
+      <div id="clock-container">
+        <div id="clock-type">
+          <p>AM</p>
+          <p>PM</p>
+        </div>
+        <h1 id="clock" class="hidden">00:00:00</h1>
+      </div>
       <h1 id="greeting" class="hidden"></h1>
       <form class="hidden" id="todo-form">
-        <h2>What do you want to do today?</h2>
+        <h2>What do you want to do?</h2>
         <input class="normal-input" type="text" required />
       </form>
+      <ul class="hidden" id="todo-list"></ul>
       <div class="hidden" id="quotes-container">
         <p></p>
         <p></p>
