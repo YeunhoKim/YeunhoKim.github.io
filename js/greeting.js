@@ -1,6 +1,8 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input");
 const loginBtn = loginForm.querySelector("button");
+const clockContainer = document.querySelector("#clock-container");
+const clockType = document.querySelector("#clock-type");
 //const greeting = document.querySelector("#greeting");
 
 const HIIDDEN_CALSSNAME = "hidden";
@@ -22,6 +24,8 @@ function paintUsername(username) {
   weatherHeader.classList.remove(HIIDDEN_CALSSNAME);
   quotesContainer.classList.remove(HIIDDEN_CALSSNAME);
   todoList.classList.remove(HIIDDEN_CALSSNAME);
+  clockContainer.classList.remove(HIIDDEN_CALSSNAME);
+  clockType.classList.remove(HIIDDEN_CALSSNAME);
   loginForm.classList.add(HIIDDEN_CALSSNAME);
 }
 
