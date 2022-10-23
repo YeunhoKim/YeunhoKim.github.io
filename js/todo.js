@@ -1,22 +1,6 @@
 const todoForm = document.querySelector("#todo-form");
 const todoInput = todoForm.querySelector("input");
 const todoList = document.querySelector("#todo-list");
-const TODOS_KEY = "todos";
-const weeks = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dev",
-];
 let todos = [];
 
 function saveTodos(todos) {

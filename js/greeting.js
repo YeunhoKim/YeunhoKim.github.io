@@ -5,9 +5,6 @@ const clockContainer = document.querySelector("#clock-container");
 const clockType = document.querySelector("#clock-type");
 //const greeting = document.querySelector("#greeting");
 
-const HIIDDEN_CALSSNAME = "hidden";
-const USERNAME_KEY = "username";
-
 function paintUsername(username) {
   const date = new Date();
   const h = date.getHours();

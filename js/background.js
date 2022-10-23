@@ -7,12 +7,6 @@ const fileExtension = ".jpeg";
 let imgList = [];
 imgName.forEach((number) => imgList.push(`${String(number)}${fileExtension}`));
 
-//console.log(imgList);
-
-const bgImg = document.createElement("img");
-
-const imgIdx = randomIdx(imgList);
-
 function paintImage(number) {
   const image = new Image();
   image.src = `img/${imgList[number]}`;
@@ -20,11 +14,9 @@ function paintImage(number) {
 }
 
 function init() {
+  const imgIdx = randomIdx(imgList);
   paintImage(imgIdx);
 }
 
-bgImg.src = `img/${imgList[imgIdx]}`;
-
 init();
-
-//document.body.appendChild(bgImg);
+setInterval(init, SET_INTERVAL);

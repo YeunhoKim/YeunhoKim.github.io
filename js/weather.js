@@ -4,8 +4,6 @@ const city = weatherContainer.querySelector("p:last-child");
 const weather = weatherContainer.querySelector("p:first-child");
 const temp = weatherHeader.querySelector("#temp");
 
-const API_KEY = "34db59a4e51752a7ef6686db3f8f9ccd";
-
 function geoOk(location) {
   //console.log(location);
   const lat = location.coords.latitude;
@@ -14,7 +12,7 @@ function geoOk(location) {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      //console.log(data);
       city.innerText = data.name;
       weather.innerText = data.weather[0].description;
       temp.innerText = `${Math.floor(data.main.temp)}°C`;
